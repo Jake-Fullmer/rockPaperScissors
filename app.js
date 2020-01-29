@@ -1,8 +1,5 @@
 let choices = ["rock", "paper", "scissors"];
 
-// let computerPick = choices[Math.floor(Math.random() * choices.length)];
-// console.log("This is the computer choice index", computerPick);
-
 function rock() {
   let computerPick = choices[Math.floor(Math.random() * choices.length)];
   console.log("This is computer choice within function", computerPick)
