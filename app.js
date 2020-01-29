@@ -1,11 +1,9 @@
 let choices = ["rock", "paper", "scissors"];
 
-let computerPickIndex = Math.floor(Math.random() * choices.length);
-let computerPick = choices[computerPickIndex];
+let computerPick = choices[Math.floor(Math.random() * choices.length)];
 console.log("This is the computer choice index", computerPick);
 
 function rock() {
-
   if (computerPick == choices[0]) {
     document.getElementById("cardTopText").textContent = "It is a draw"
     console.log(computerPick)
