@@ -3,14 +3,18 @@ let choices = ["rock", "paper", "scissors"];
 function play(num) {
   let computerPick = choices[Math.floor(Math.random() * choices.length)];
   let playerPick = choices[num];
+  let imageElement = document.getElementById("pic");
   console.log("Comp choice", computerPick);
   console.log("Player choice", playerPick);
   if (playerPick > computerPick) {
-    document.getElementById("cardTopText").textContent = "You win";
+    document.getElementById("picText").innerHTML = "You win";
+    imageElement.src = "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80";
   } else if (playerPick < computerPick) {
-    document.getElementById("cardTopText").textContent = "You lose";
+    document.getElementById("picText").innerHTML = "You lose";
+    imageElement.src = "https://images.unsplash.com/photo-1534653169071-4f036d137aca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1948&q=80";
   } else if (playerPick == computerPick) {
-    document.getElementById("cardTopText").textContent = "It is a draw";
+    document.getElementById("picText").innerHTML = "It is a draw";
+    imageElement.src = "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80";
   };
 }
 

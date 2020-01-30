@@ -13,27 +13,30 @@
 
 <body>
 
-  <div class="container-fluid">
-    <div class="row p-5">
-      <div class="col-12 text-center">
-        <div class="card" style="width: 18rem;">
-          <div class="p-3">
-            <h3 id="cardTopText" class="">Only time will tell who wins, we're waiting???</h3>
-          </div>
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Rock Paper Scissors</h5>
-            <p class="card-text">Computers are taking over the world, can you stop them?</p>
-            <a id="rock" class="btn btn-primary" onClick="play(0)">ROCK</a>
-            <a id=" paper" class="btn btn-primary" onClick="play(1)">PAPER</a>
-            <a id=" scissors" class="btn btn-primary" onClick="play(2)">SCISSORS</a>
 
-          </div>
-        </div>
+  <div class="jumbotron-fluid container" style="width: 100vw">
+    <div class=" row p-3">
+      <div class="col-12 text-center">
+        <img id="pic" class="imgFluid"
+          src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1957&q=80">
+        <div id="picText" class="textLarge">Only time will tell who wins, we're waiting...</div>
+      </div>
+      <div class="col-12 text-center">
+        <p class="textMedium mt-3">Computers are taking over the world, can you stop them?</p>
+      </div>
+      <div class="col-12 text-center m-1">
+        <a id="rock" class="btn btn-primary mr-5 textMedium" onClick="play(0)">ROCK</a>
+        <a id="paper" class="btn btn-primary textMedium" onClick="play(1)">PAPER</a>
+        <a id="scissors" class="btn btn-primary ml-5 textMedium" onClick="play(2)">SCISSORS</a>
       </div>
     </div>
 
   </div>
+  </div>
+
+
+
+
   <script src=" app.js"></script>
 </body>
 
