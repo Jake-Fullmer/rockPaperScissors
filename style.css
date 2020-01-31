@@ -1,9 +1,13 @@
 .imgFluid {
-  width: 35vw;
+  width: 30vw;
 }
 .textLarge {
   font-size: 2rem;
 }
 .textMedium {
   font-size: 1.5rem;
+
+.textSmall {
+  font-size: 1rem;
+}
 }

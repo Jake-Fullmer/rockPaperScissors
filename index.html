@@ -18,17 +18,29 @@
         <p class="textMedium mt-3">Computers are taking over the world, can you stop them?</p>
       </div>
     </div>
-    <div class=" row p-3" style="width: 100vw">
-      <div class="col-12 text-center">
+    <div class="row pt-2">
+      <div class="col-4">
+        <img id="playerImage" class="imgFluid mb-2" src="">
+        <div class="textSmall mb-1 text-right">Player</div>
+        <div id="playerText" class="textLarge mb-1 text-right"></div>
+      </div>
+      <div class="col-4 text-center">
         <img id="pic" class="imgFluid mb-2"
           src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1957&q=80">
-        <div id="picText" class="textLarge mb-1">Only time will tell who wins, we're waiting...</div>
+        <div id="picText" class="textSmall mb-1">Only time will tell who wins, we're waiting...
+        </div>
       </div>
+      <div class="col-4">
+        <img id="computerImg" class="imgFluid mb-2" src="">
+        <div class="textSmall mb-1 text-left">Computer</div>
+        <div id="computerText" class="textLarge mb-1 text-left"></div>
+      </div>
+    </div>
   </main>
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 text-center bg-secondary text-white">
-        <a id="rock" class="btn btn-primary mx-5 textMedium my-4" onClick="play(0)">ROCK</a>
+        <a id="rock" class="btn btn-primary mx-5 textMedium my-4" onClick="play(0);">ROCK</a>
         <a id="paper" class="btn btn-success mx-5 textMedium my-4" onClick="play(1)">PAPER</a>
         <a id="scissors" class="btn btn-danger mx-5 textMedium my-4" onClick="play(2)">SCISSORS</a>
       </div>
